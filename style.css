@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffc0cb;
+    font-family: sans-serif;
+    outline: none;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    /*box-shadow: inset 5px 5px 12px #e7cba6, 5px 5px 12px #bbebe8;*/
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+}
+
+.display {
+    grid-column: span 4;
+    height: 40px;
+    width: 260px;
+    background-color: #353839;
+    border: none;
+    color: #fff;
+    text-align: end;
+    justify-items: center;
+    margin: auto;
+    padding: 8px 20px 20px 20px;
+}
+
+#input-display {
+    font-size: 25px;
+    margin-top: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#output-display {
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    height: 48px;
+    width: 48px;
+    background-color: #111111;
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.del-btn {
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin: 1.6rem 1.7rem;
+    height: 0;
+    width: 10px;
+    border-top: 15px solid #fff;
+    border-left: 15px solid transparent;
+    border-right: 5px solid transparent;
+    background-color: #fff;
+}
+ 
+.del-btn:before {
+    position: absolute;
+    content: '';
+    border-bottom: 10px solid #fff;
+    border-left: 8.5px solid transparent;
+    border-right: 8.5px solid transparent;
+    bottom: 3px;
+    left: -28px;
+    transform: rotate(-90deg);
+}
+
+#bck {
+    position: relative;
+    bottom: 3.1rem;
+    color: #111111;
+    background-color: transparent;
+    font-weight: 600;
+
+}
+
+.clr-btn {
+    background-color: #750446;
+    color: #f1cfe3;
+}
+
+.spl-btn {
+    background-color: #808080;
+}
+
+.eql-btn {
+    background-color: #3737be;
+}
